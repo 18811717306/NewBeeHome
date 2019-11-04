@@ -3,13 +3,8 @@ import os
 f = os.listdir('path')
 
 for i in f:
-    
     if 'symbol' in i:
-        
         file = open('path/%s' % i, 'r')
-        
         for line in file:
-            
             print(file.name, ':', line)
-            
         file.close()
